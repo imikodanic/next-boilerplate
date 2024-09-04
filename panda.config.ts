@@ -27,6 +27,5 @@ export default defineConfig({
     outdir: "styled-system",
 
     jsxFramework: "react",
-    jsxFactory: "treblle",
     jsxStyleProps: "all",
 });
