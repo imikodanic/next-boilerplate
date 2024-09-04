@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "App Config",
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "allowJs": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "~styled-system/*": ["./styled-system/*"],
+            "~components/*": ["./components/*"]
+        },
+        "strictNullChecks": true,
+        "strict": true
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        ".eslintrc.cjs",
+        "postcss.config.cjs",
+    ],
+    "exclude": ["node_modules"]
+}
